@@ -1,0 +1,248 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f3f6;
+    color: #212121;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    background: #2874f0;
+    min-height: 70px;
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #ffeb3b;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+
+.header nav a:hover {
+    color: #ffeb3b;
+}
+
+/* Main Layout */
+.container {
+    width: min(1000px, 92%);
+    margin: 35px auto;
+    flex: 1;
+}
+
+.suggestion-card,
+.suggestion-list-section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+}
+
+.suggestion-card h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #172337;
+}
+
+.suggestion-card > p,
+.suggestion-list-section > p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+/* Form */
+#suggestionForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#suggestionForm label {
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+#suggestionForm input,
+#suggestionForm textarea {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #cbd2dc;
+    border-radius: 7px;
+    font: inherit;
+    font-size: 15px;
+    outline: none;
+    background: #fff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#suggestionForm textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+#suggestionForm input:focus,
+#suggestionForm textarea:focus {
+    border-color: #2874f0;
+    box-shadow: 0 0 0 3px rgba(40, 116, 240, 0.12);
+}
+
+#submitSuggestionBtn {
+    margin-top: 8px;
+    padding: 13px 20px;
+    background: #2874f0;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#submitSuggestionBtn:hover {
+    background: #1558c0;
+}
+
+#submitSuggestionBtn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+#message {
+    min-height: 20px;
+    color: #187744;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 18px;
+    color: #2874f0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Suggestions List */
+.suggestion-list-section {
+    margin-top: 28px;
+}
+
+.suggestion-list-section h2 {
+    color: #172337;
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.suggestion-list-section > p {
+    margin-bottom: 18px;
+}
+
+#suggestionList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.suggestion-item {
+    padding: 20px;
+    border: 1px solid #e0e5ed;
+    border-left: 4px solid #2874f0;
+    border-radius: 8px;
+    background: #fafbfc;
+    overflow-wrap: anywhere;
+}
+
+.suggestion-item h3 {
+    color: #172337;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.suggestion-item p {
+    color: #444;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    margin-bottom: 12px;
+}
+
+.suggestion-date {
+    color: #777;
+    font-size: 12px;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+    background: #172337;
+    color: white;
+    font-size: 14px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header nav {
+        gap: 14px;
+    }
+
+    .container {
+        margin: 20px auto;
+    }
+
+    .suggestion-card,
+    .suggestion-list-section {
+        padding: 20px;
+    }
+
+    .suggestion-card h1 {
+        font-size: 24px;
+    }
+
+    #submitSuggestionBtn {
+        width: 100%;
+    }
+}

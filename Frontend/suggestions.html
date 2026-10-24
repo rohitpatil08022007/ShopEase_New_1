@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Suggestions | ShopEase</title>
+
+    <link rel="stylesheet" href="Css/suggestions.css">
+    <script src="Js/suggestions.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">Shop<span>Ease</span></a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="feedback.html">Customer Feedback</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="suggestion-card">
+            <h1>Website Suggestions</h1>
+            <p>
+                Share your ideas to help us improve the ShopEase website.
+            </p>
+
+            <form id="suggestionForm">
+
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    maxlength="255"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="suggestion">Your Suggestion</label>
+                <textarea
+                    id="suggestion"
+                    rows="5"
+                    maxlength="2000"
+                    placeholder="Tell us what we can improve..."
+                    required
+                ></textarea>
+
+                <button type="submit" id="submitSuggestionBtn">
+                    Submit Suggestion
+                </button>
+
+                <p id="message" role="status"></p>
+            </form>
+
+            <a href="index.html" class="back-link">Back to Home</a>
+        </section>
+
+        <section class="suggestion-list-section">
+            <h2>New Suggestions</h2>
+            <p>Ideas shared by ShopEase visitors</p>
+
+            <div id="suggestionList">
+                <p>Loading suggestions...</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 ShopEase. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

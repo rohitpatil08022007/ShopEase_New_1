@@ -1,0 +1,126 @@
+.offers-container {
+    width: min(1100px, 92%);
+    margin: 30px auto;
+}
+
+.offers-hero {
+    padding: 45px 25px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #163b83, #2874f0);
+    color: white;
+    text-align: center;
+}
+
+.offers-tag {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.offers-hero h1 {
+    font-size: clamp(28px, 5vw, 42px);
+    margin: 15px 0;
+}
+
+.offers-hero p {
+    line-height: 1.7;
+}
+
+.offers-shop-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: white;
+    color: #1557c0;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.offers-section {
+    margin: 35px 0;
+}
+
+.offers-section h2 {
+    margin-bottom: 8px;
+}
+
+.offers-subtitle {
+    color: #666;
+    margin-bottom: 22px;
+}
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.offer-card {
+    padding: 22px;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    background: white;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.offer-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.offer-type {
+    display: inline-block;
+    padding: 6px 10px;
+    background: #e8f1ff;
+    color: #1557c0;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.offer-card h3 {
+    margin: 16px 0 8px;
+    color: #172b4d;
+}
+
+.offer-discount {
+    font-size: 27px;
+    font-weight: 800;
+    color: #16803d;
+    margin: 12px 0;
+}
+
+.offer-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.offer-condition {
+    font-size: 12px;
+    color: #777 !important;
+    margin-top: 15px;
+}
+
+.offers-note {
+    padding: 20px;
+    margin: 30px 0;
+    background: #fff8e6;
+    border-left: 4px solid #e3a008;
+    border-radius: 8px;
+}
+
+.offers-note p {
+    line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+    .offers-hero {
+        padding: 32px 18px;
+    }
+
+    .offers-grid {
+        grid-template-columns: 1fr;
+    }
+}

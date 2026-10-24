@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f3f6;
+    color: #222;
+}
+
+.header {
+    background: #2874f0;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #ffe500;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.profile-container {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 15px;
+}
+
+.profile-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    margin-top: 0;
+    color: #2874f0;
+}
+
+.subtitle {
+    color: #666;
+}
+
+.profile-info {
+    margin: 25px 0;
+    padding: 18px;
+    background: #f7f9fc;
+    border-radius: 8px;
+}
+
+.profile-info p {
+    overflow-wrap: anywhere;
+    line-height: 1.6;
+}
+
+.profile-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.profile-btn,
+#logoutBtn {
+    display: inline-block;
+    padding: 12px 18px;
+    background: #2874f0;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#logoutBtn {
+    background: #d93025;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #2874f0;
+    text-decoration: none;
+}
+
+#profileMessage {
+    color: #16733b;
+}
+
+
+/* Logout Confirmation Popup */
+#logoutConfirmPopup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 20px;
+}
+
+.logout-popup-box {
+    background: #ffffff;
+    width: 100%;
+    max-width: 380px;
+    padding: 28px 24px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+    font-family: Arial, sans-serif;
+}
+
+.logout-popup-icon {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.logout-popup-box h2 {
+    color: #212121;
+    font-size: 22px;
+    margin: 0 0 12px;
+}
+
+.logout-popup-box p {
+    color: #666666;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+.logout-popup-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.logout-popup-actions button {
+    border: none;
+    border-radius: 6px;
+    padding: 11px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#confirmLogoutBtn {
+    background: #2874f0;
+    color: #ffffff;
+}
+
+#confirmLogoutBtn:hover {
+    background: #185cc5;
+}
+
+#cancelLogoutBtn {
+    background: #eeeeee;
+    color: #333333;
+}
+
+#cancelLogoutBtn:hover {
+    background: #dddddd;
+}
+
+@media (max-width: 400px) {
+    .logout-popup-actions {
+        flex-direction: column;
+    }
+
+    .logout-popup-actions button {
+        width: 100%;
+    }
+}

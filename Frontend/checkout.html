@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Checkout</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/checkout.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">Shop<span>Ease</span></a>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+</header>
+
+<main class="checkout-container">
+    <h2>Secure Checkout</h2>
+    <p>Enter your delivery details to place your order.</p>
+
+    <div class="checkout-layout">
+        <section class="checkout-card">
+            <h3>Delivery Address</h3>
+
+            <form id="checkoutForm">
+                <label for="customerName">Full Name</label>
+                <input type="text" id="customerName"
+                       placeholder="Enter your full name" required>
+
+                <label for="customerMobile">Mobile Number</label>
+                <input type="tel" id="customerMobile"
+                       placeholder="10-digit mobile number"
+                       pattern="[6-9][0-9]{9}" required>
+
+                <label for="customerEmail">Email Address</label>
+                <input type="email" id="customerEmail"
+                       placeholder="Enter your email" required>
+
+                <label for="customerAddress">Full Address</label>
+                <textarea id="customerAddress"
+                          placeholder="House no., street, area"
+                          rows="3" required></textarea>
+
+                <label for="customerCity">City</label>
+                <input type="text" id="customerCity"
+                       placeholder="Enter city" required>
+
+                <label for="customerPincode">PIN Code</label>
+                <input type="text" id="customerPincode"
+                       placeholder="6-digit PIN code"
+                       pattern="[0-9]{6}" required>
+
+                <button type="submit" class="primary-btn">
+                    Continue to Payment
+                </button>
+            </form>
+        </section>
+
+        <section class="checkout-card">
+            <h3>Order Summary</h3>
+            <div id="checkoutItems"></div>
+            <hr>
+            <h3 id="checkoutTotal">Total Amount: ₹0</h3>
+            <p id="deliveryDate">Estimated delivery: —</p>
+            <p class="checkout-note">
+                Demo project only. No real payment will be collected.
+            </p>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <p>© 2026 ShopEase. Student Major Project.</p>
+</footer>
+
+</body>
+</html>

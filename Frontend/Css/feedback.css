@@ -1,0 +1,287 @@
+
+/* ===== Global Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== Navigation Bar ===== */
+.header {
+    background: linear-gradient(120deg, #1746a2, #2874f0);
+    min-height: 75px;
+    padding: 16px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.logo {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: #ffe500;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.header nav a:hover {
+    color: #ffe500;
+}
+
+/* ===== Main Layout ===== */
+.container {
+    width: 92%;
+    max-width: 1050px;
+    margin: 45px auto;
+    flex: 1;
+}
+
+.feedback-card,
+.feedback-list-section {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 8px 28px rgba(15, 23, 42, 0.06);
+}
+
+/* ===== Feedback Form ===== */
+.feedback-card h1 {
+    color: #1746a2;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.feedback-card > p {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+#feedbackForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#feedbackForm label {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 17px 0 9px;
+    color: #334155;
+}
+
+#feedbackForm input,
+#feedbackForm textarea {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+    background: #f8fafc;
+    color: #1e293b;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s,
+                background 0.2s;
+}
+
+#feedbackForm input:focus,
+#feedbackForm textarea:focus {
+    border-color: #2874f0;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(40, 116, 240, 0.12);
+}
+
+#feedbackForm textarea {
+    resize: vertical;
+    min-height: 130px;
+    line-height: 1.6;
+}
+
+#submitFeedbackBtn {
+    margin-top: 24px;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 9px;
+    background: linear-gradient(120deg, #2874f0, #1746a2);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#submitFeedbackBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(40, 116, 240, 0.25);
+}
+
+#submitFeedbackBtn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+#message {
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 24px;
+    color: #2874f0;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* ===== New Feedback Section ===== */
+.feedback-list-section {
+    margin-top: 30px;
+}
+
+.feedback-list-section h2 {
+    color: #1746a2;
+    font-size: 25px;
+    margin-bottom: 9px;
+}
+
+.feedback-list-section > p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 22px;
+}
+
+/* Individual Feedback Card */
+.feedback-item {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #2874f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 16px;
+    overflow-wrap: anywhere;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.feedback-item:hover {
+    box-shadow: 0 5px 16px rgba(15, 23, 42, 0.07);
+    transform: translateY(-2px);
+}
+
+.feedback-item h3 {
+    color: #1746a2;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.feedback-item p {
+    color: #334155;
+    font-size: 15px;
+    line-height: 1.8;
+    white-space: pre-wrap;
+}
+
+.feedback-date {
+    display: block;
+    margin-top: 14px;
+    color: #64748b;
+    font-size: 12px;
+}
+
+/* ===== Footer ===== */
+footer {
+    background: #172554;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 22px 15px;
+    font-size: 13px;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 600px) {
+    .header {
+        padding: 16px 5%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .header nav {
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .header nav a {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 94%;
+        margin: 22px auto;
+    }
+
+    .feedback-card,
+    .feedback-list-section {
+        padding: 21px;
+        border-radius: 12px;
+    }
+
+    .feedback-card h1 {
+        font-size: 25px;
+    }
+
+    .feedback-list-section h2 {
+        font-size: 22px;
+    }
+
+    .feedback-item {
+        padding: 16px;
+    }
+}

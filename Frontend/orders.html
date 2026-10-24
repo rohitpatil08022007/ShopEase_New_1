@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | My Orders</title>
+
+    <script>
+        if (localStorage.getItem("shopease_logged_in") !== "true") {
+            window.location.replace("login.html");
+        }
+    </script>
+
+    <link rel="stylesheet" href="Css/style.css">
+    <script src="Js/orders.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">Shop<span>Ease</span></a>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+</header>
+
+<main class="orders-container">
+    <div class="section-heading">
+        <div>
+            <h2>My Orders</h2>
+            <p>Track and manage your ShopEase orders</p>
+        </div>
+        <a href="products.html">Continue Shopping</a>
+    </div>
+
+    <div id="ordersContainer"></div>
+</main>
+
+<footer>
+    <p>© 2026 ShopEase. Student Major Project.</p>
+    <p>Demo website — no real payments are processed.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase | Login</title>
+
+    <link rel="stylesheet" href="Css/login.css">
+</head>
+<body>
+
+    <main class="login-container">
+
+        <header class="login-header">
+            <a href="index.html" class="logo">Shop<span>Ease</span></a>
+            <h2>Welcome Back!</h2>
+            <p>Login to continue shopping with ShopEase.</p>
+        </header>
+
+        <form id="loginForm" novalidate>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    autocomplete="off"
+                    required
+                >
+                <small class="field-error" id="emailError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+
+                <div class="password-wrapper">
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        autocomplete="new-password"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        id="togglePassword"
+                        class="toggle-password"
+                        aria-label="Show password"
+                    >Show</button>
+                </div>
+
+                <small class="field-error" id="passwordError"></small>
+            </div>
+
+            <div class="forgot-password">
+                <a href="forgot-password.html">Forgot Password?</a>
+            </div>
+
+            <button type="submit" id="loginBtn" class="login-btn">
+                Login
+            </button>
+
+            <p id="message" class="message" role="status" aria-live="polite"></p>
+
+        </form>
+
+        <div class="divider">
+            <span>OR</span>
+        </div>
+
+        <p class="register-link">
+            Don't have an account?
+            <a href="register.html">Create Account</a>
+        </p>
+
+        <p class="home-link">
+            <a href="index.html">← Back to Home</a>
+        </p>
+
+        <p class="security-note">
+            Secure login will be enabled after backend integration.
+        </p>
+
+    </main>
+
+    <script src="Js/login.js"></script>
+
+</body>
+</html>

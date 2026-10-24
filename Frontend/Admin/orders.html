@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Admin Orders</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="orders.css">
+</head>
+<body>
+    <header class="site-header">
+        <h2>ShopEase Admin Panel</h2>
+        <p>Manage Customer Orders</p>
+    </header>
+
+    <main class="admin-orders-page">
+        <h1>Order Management</h1>
+
+        <section class="admin-dashboard">
+            <div class="dashboard-box">
+                <h3>Total Orders</h3>
+                <p id="totalOrders">0</p>
+            </div>
+            <div class="dashboard-box">
+                <h3>Shipped Orders</h3>
+                <p id="shippedOrders">0</p>
+            </div>
+            <div class="dashboard-box">
+                <h3>Delivered Orders</h3>
+                <p id="deliveredOrders">0</p>
+            </div>
+            <div class="dashboard-box">
+                <h3>Cancelled Orders</h3>
+                <p id="cancelledOrders">0</p>
+            </div>
+            <div class="dashboard-box">
+                <h3>Total Order Value</h3>
+                <p id="totalOrderValue">₹0</p>
+            </div>
+        </section>
+
+        <h2>View orders and update their delivery status</h2>
+
+        <section class="admin-order-filters">
+            <input
+                type="search"
+                id="orderSearch"
+                placeholder="Search by Order ID or Customer Name"
+                aria-label="Search orders">
+
+            <select id="statusFilter" aria-label="Filter by status">
+                <option value="All">All Orders</option>
+                <option value="PLACED">Order Placed</option>
+                <option value="PACKED">Packed</option>
+                <option value="SHIPPED">Shipped</option>
+                <option value="DELIVERED">Delivered</option>
+                <option value="CANCELLED">Order Cancelled</option>
+            </select>
+
+            <input
+                type="date"
+                id="orderDateFilter"
+                title="Filter orders by date"
+                aria-label="Filter orders by date">
+
+            <button type="button" id="clearFilters">Clear Filters</button>
+        </section>
+
+        <p id="adminMessage" role="status" aria-live="polite"></p>
+        <div id="adminOrdersContainer">
+            <p>Loading orders...</p>
+        </div>
+    </main>
+
+    <script src="oders.js"></script>
+</body>
+</html>

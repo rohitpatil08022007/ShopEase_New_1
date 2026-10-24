@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Online Shopping</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <script src="Js/script.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">Shop<span>Ease</span></a>
+
+    <form class="search-box" id="searchForm">
+        <input type="search" id="searchInput"
+               placeholder="Search for products, brands and more">
+        <button type="submit">Search</button>
+    </form>
+
+
+    <nav class="nav-links">
+        <a href="orders.html">Orders</a>
+        <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+        <a href="admin/admin-login.html">Admin</a>
+        <a href="profile.html" id="profileLink" style="display: none;">Profile</a>
+        <a href="register.html" target="_blank">Register</a>
+        <a href="login.html" target="_blank">Login</a>
+        <a href="#" id="logoutBtn" style="display: none;">Logout</a>
+    </nav>
+
+</header>
+
+<section class="categories">
+    <a href="products.html?category=Mobiles">Mobiles</a>
+    <a href="products.html?category=Electronics">Electronics</a>
+    <a href="products.html?category=Fashion">Fashion</a>
+    <a href="products.html?category=Home">Home & Kitchen</a>
+    <a href="products.html?category=Appliances">Appliances</a>
+    <a href="products.html?category=Beauty">Beauty</a>
+    <a href="products.html?category=Sports">Sports</a>
+    <a href="products.html?category=Grocery">Grocery</a>
+</section>
+
+<main>
+    <section class="hero">
+        <div>
+            <p class="eyebrow">YOUR EVERYDAY SHOPPING DESTINATION</p>
+            <h1>Big Deals. Better Shopping.</h1>
+            <p>Explore products, compare prices and discover great offers.</p>
+            <a class="primary-btn" href="products.html">Shop Now</a>
+        </div>
+        <div class="hero-icon">🛍️</div>
+    </section>
+
+    <section class="offer-banner">
+        <div>
+            <h2>Bank Offers & Special Deals</h2>
+            <p>Discover eligible card discounts and promotional offers.</p>
+            <small>Demo offers only. Actual bank discounts are not connected.</small>
+        </div>
+        <a href="offers.html" class="offer-btn">View Offers</a>
+    </section>
+
+    <section class="section-heading">
+        <div>
+            <h2>Featured Products</h2>
+            <p>Explore our popular picks</p>
+        </div>
+        <a href="products.html">View All →</a>
+    </section>
+
+    <p id="searchMessage" class="message" aria-live="polite"></p>
+    <section id="productGrid" class="product-grid"></section>
+
+    <section class="survey-banner">
+        <div>
+            <h2>Help Us Personalize Your Shopping</h2>
+            <p>Tell us your interests and budget to get relevant suggestions.</p>
+        </div>
+        <a href="suggestions.html" class="primary-btn">Take Survey</a>
+    </section>
+
+    <section class="quick-links">
+        <a href="feedback.html">Customer Feedback</a>
+        <a href="register.html" target="_blank">Create Account</a>
+        <a href="suggestions.html">Website Suggestions</a>
+        <a href="offers.html">Bank Offers</a>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 ShopEase. Student Major Project.</p>
+    <p>Demo shopping website. No real payments are processed.</p>
+</footer>
+
+</body>
+</html>

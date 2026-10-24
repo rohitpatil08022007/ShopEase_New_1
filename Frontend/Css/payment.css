@@ -1,0 +1,74 @@
+
+/* Payment Success Modal */
+.payment-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.payment-modal-content {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px 24px;
+    background: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+    animation: paymentPopup 0.25s ease-out;
+}
+
+.success-icon {
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e7f8ed;
+    color: #168542;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.payment-modal-content h2 {
+    margin-bottom: 18px;
+    color: #168542;
+    font-size: 22px;
+}
+
+.payment-modal-content p {
+    margin: 10px 0;
+    color: #333333;
+    overflow-wrap: anywhere;
+}
+
+.payment-modal-content .demo-note {
+    margin: 18px 0;
+    color: #777777;
+    font-size: 12px;
+}
+
+.payment-modal-content #viewOrdersBtn {
+    width: 100%;
+    margin-top: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+@keyframes paymentPopup {
+    from {
+        opacity: 0;
+        transform: scale(0.92);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

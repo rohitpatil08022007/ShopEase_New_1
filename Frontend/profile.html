@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | ShopEase</title>
+    <link rel="stylesheet" href="Css/profile.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">Shop<span>Ease</span></a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="orders.html">My Orders</a>
+        </nav>
+    </header>
+
+    <main class="profile-container">
+        <section class="profile-card">
+            <h1>My Profile</h1>
+            <p class="subtitle">Your ShopEase account details</p>
+
+            <div class="profile-info">
+                <p><strong>Full Name:</strong> <span id="profileName">Not available</span></p>
+                <p><strong>Email:</strong> <span id="profileEmail">Not available</span></p>
+                <p><strong>Mobile:</strong> <span id="profileMobile">Not available</span></p>
+            </div>
+
+            <div class="profile-actions">
+                <a href="orders.html" class="profile-btn">My Orders</a>
+                <a href="products.html" class="profile-btn">Continue Shopping</a>
+                <button type="button" id="logoutBtn">Logout</button>
+            </div>
+
+            <p id="profileMessage" role="status"></p>
+            <a href="index.html" class="back-link">Back to Home</a>
+        </section>
+    </main>
+
+    <script src="Js/profile.js"></script>
+</body>
+</html>
